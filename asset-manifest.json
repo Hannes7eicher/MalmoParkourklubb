@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/parkour/static/css/main.2c1a3a5c.css",
+    "main.js": "/parkour/static/js/main.2f72e754.js",
+    "static/js/787.c7cf056b.chunk.js": "/parkour/static/js/787.c7cf056b.chunk.js",
+    "static/media/hero.png": "/parkour/static/media/hero.6f6cd616ee0b46030ae2.png",
+    "index.html": "/parkour/index.html",
+    "main.2c1a3a5c.css.map": "/parkour/static/css/main.2c1a3a5c.css.map",
+    "main.2f72e754.js.map": "/parkour/static/js/main.2f72e754.js.map",
+    "787.c7cf056b.chunk.js.map": "/parkour/static/js/787.c7cf056b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c1a3a5c.css",
+    "static/js/main.2f72e754.js"
+  ]
+}
