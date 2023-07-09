@@ -10,12 +10,12 @@ export default function CollapseExample() {
   return (
     <div
       tabIndex="0"
-      className={`collapse collapse-arrow border border-base-300 bg-base-200 ${
+      className={`collapse collapse-arrow border border-base-300 bg-black ${
         collapsed ? "collapsed" : ""
       }`}
     >
       <div
-        className="collapse-title text-white text-left sm:text-center sm_text-center text-xl sm:text-4xl"
+        className="collapse-title text-white text-center sm_text-center text-xl sm:text-4xl"
         onClick={toggleCollapse}
       >
         Vi behöver er hjälp!
