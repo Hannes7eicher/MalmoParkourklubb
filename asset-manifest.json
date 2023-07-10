@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/MalmoParkourklubb/static/css/main.460b94c2.css",
-    "main.js": "/MalmoParkourklubb/static/js/main.1e0598ce.js",
-    "static/js/787.a292ff09.chunk.js": "/MalmoParkourklubb/static/js/787.a292ff09.chunk.js",
+    "main.css": "/MalmoParkourklubb/static/css/main.bedf0ab0.css",
+    "main.js": "/MalmoParkourklubb/static/js/main.9dfd7693.js",
+    "static/js/787.8a556686.chunk.js": "/MalmoParkourklubb/static/js/787.8a556686.chunk.js",
     "static/media/hero.png": "/MalmoParkourklubb/static/media/hero.6f6cd616ee0b46030ae2.png",
     "static/media/membership.png": "/MalmoParkourklubb/static/media/membership.6262cded7bfab75646ac.png",
     "static/media/about.jpg": "/MalmoParkourklubb/static/media/about.1fc7ef4ca13850e4c6d7.jpg",
     "index.html": "/MalmoParkourklubb/index.html",
-    "main.460b94c2.css.map": "/MalmoParkourklubb/static/css/main.460b94c2.css.map",
-    "main.1e0598ce.js.map": "/MalmoParkourklubb/static/js/main.1e0598ce.js.map",
-    "787.a292ff09.chunk.js.map": "/MalmoParkourklubb/static/js/787.a292ff09.chunk.js.map"
+    "main.bedf0ab0.css.map": "/MalmoParkourklubb/static/css/main.bedf0ab0.css.map",
+    "main.9dfd7693.js.map": "/MalmoParkourklubb/static/js/main.9dfd7693.js.map",
+    "787.8a556686.chunk.js.map": "/MalmoParkourklubb/static/js/787.8a556686.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.460b94c2.css",
-    "static/js/main.1e0598ce.js"
+    "static/css/main.bedf0ab0.css",
+    "static/js/main.9dfd7693.js"
   ]
 }
