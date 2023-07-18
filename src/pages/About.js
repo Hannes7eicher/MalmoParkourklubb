@@ -1,16 +1,11 @@
-import Footer from "../components/Footer";
 import backgroundImage from "../assets/about.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-gray-950">
-      {/*       <Hero
-        h1="Hej"
-        h2="Välkommen till vår nya hemsida"
-        h3=""
-        p1="Här kan du läsa om vem vi är och hur du kan hjälpa till!"
-        p2=""
-      /> */}
 
       <div
         className="hero h-100 sm:h-screen bg-blend-darke relative"
@@ -29,85 +24,88 @@ export default function About() {
         ></div>
         <div className="hero-content">
           <div className="max-w-screen sm:mx-64 pt-16 sm:pt-0">
-            <h1 className="mb-1 text-5xl sm:text-6xl xl:text-8xl p-2 text-white">
-              Hej
-            </h1>
-            <h1 className="mb-1 text-5xl sm:text-6xl xl:text-8xl p-2 text-white">
-              och välkommen till vår nya
-            </h1>
-            <h1 className="mb-5 text-5xl sm:text-6xl xl:text-8xl p-2 text-yellow-400">
-              hemsida
+            <h1 className="mb-1 leading-relaxed text-5xl sm:text-6xl xl:text-8xl p-2 text-white">
+              Hej och välkommen till vår nya{" "}
+              <span style={{ color: "#FACC14" }}>hemsida</span>
             </h1>
             <p className="text-2xl sm:text-3xl p-2 text-white">
               Här kan du läsa om vem vi är och hur du kan hjälpa till!
             </p>
-            <p className="mb-5 text-2xl sm:text-3xl p-2 text-white"></p>
+            <p className="mb-5 text-2xl sm:text-3xl p-2"></p>
           </div>
         </div>
       </div>
 
-      <div
-        className="
-          grid 
-          grid-cols-1  
-          block
-          m-8 
-          sm:m-36
-          max-w-lg
-    
-          "
-          
-      >
-        <div>
-          <h1 className="text-white text-2xl sm:text-6xl mb-12">
-            {" "}
-            Vi behöver din hjälp
+      <div className="w-screen flex justify-center py-12 px-12 text-white">
+        <div className="max-w-xl">
+          <h1 className="text-white text-left text-xl sm:text-4xl font-bold py-8">
+            Detta är Malmö Parkour
           </h1>
-          <p1 className="text-white text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            iaculis risus sed magna mattis, et blandit augue posuere. Curabitur
-            ex orci, posuere vel mauris nec, pellentesque scelerisque tortor.
-            Maecenas et facilisis augue. Morbi sagittis leo ex, ut accumsan
-            felis fringilla mollis. Aliquam condimentum pretium ipsum eu
-            egestas. Integer at convallis purus, sit amet ultricies metus.
-            Aliquam tincidunt dignissim quam sed gravida. Sed facilisis arcu
-            vitae nibh viverra semper. Phasellus hendrerit tortor non diam
-            varius vestibulum. Phasellus euismod sem vitae neque pharetra, ut
-            vulputate ligula eleifend. Pellentesque quis risus lacus. Vestibulum
-            at tempus mauris. Praesent sodales eros libero, ac faucibus mi
-            suscipit ut. Mauris tincidunt blandit est, non faucibus ex. Sed
-            lobortis risus sit amet viverra venenatis. Aenean vitae congue
-            neque. Duis dui diam, lobortis id magna ac, ornare viverra magna.
-            Integer convallis viverra dui, non efficitur neque interdum ac.
-            Phasellus hendrerit nulla in ex blandit ultricies. Nunc maximus
-            finibus lectus, eu fermentum libero blandit quis. Integer eleifend
-            arcu velit, non vulputate est fermentum a. Fusce laoreet, ante at
-            accumsan semper, elit nulla dictum est, sollicitudin posuere eros
-            nunc id lorem. Vivamus a consequat ante. Cras id justo risus.
-            Integer dignissim dui eget erat pretium, et consequat felis
-            hendrerit. Sed porttitor risus a erat ornare pharetra. Phasellus
-            quis urna a augue consectetur molestie. Vivamus mollis, nunc sit
-            amet ornare facilisis, felis nulla mollis ligula, sit amet cursus
-            turpis erat ut lorem. In quis ornare ex. Vestibulum dignissim justo
-            aliquam tortor porttitor, vel pharetra diam dictum. Cras scelerisque
-            ex id odio euismod interdum eget at velit. Vivamus sagittis mauris
-            sit amet quam iaculis, a ornare leo hendrerit. Duis dictum velit
-            posuere venenatis commodo. Nunc justo metus, eleifend ut pulvinar
-            vel, convallis non metus. Cras sed ligula volutpat, rutrum turpis
-            in, tincidunt nisi. Vestibulum dapibus, purus eu eleifend luctus, mi
-            metus finibus metus, quis dictum metus dui eu diam. Donec
-            consectetur, felis vel convallis rhoncus, elit lorem lacinia velit,
-            id commodo felis sem ac eros. Nullam ornare dignissim arcu, id
-            bibendum ipsum elementum eget. Vestibulum eu mi et leo iaculis
-            sagittis vel eu nisi. Etiam velit orci, mattis nec venenatis id,
-            commodo in risus. Sed luctus odio ex, at convallis lorem feugiat
-            vitae.
-          </p1>
-        </div>
+          <p className="text-white sm:text-2xl">
+            Vi är en grupp av tränare, atleter och föräldrar som tillsammans har
+            tagit över den gamla parkourföreningen Quality Runners (QR), numera
+            Malmö Parkourklubb (MPK), för att återskapa ett Parkourgym som Malmö
+            förtjänar. Vår resa har precis börjat och vi har en bra bit kvar att
+            gå, men tillsammans med er vill vi skapa en upplevelse för alla
+            åldrar, oavsett om du har tränat parkour förut eller är nybörjare.
+            Alla är välkomna!
+          </p>
 
-        
+          <h1 className="text-white text-left text-xl sm:text-4xl font-bold py-8">
+            Historia
+          </h1>
+          <p className="text-white sm:text-2xl">
+            Föreningen befinner sig just nu i en svår ekonomisk situation och
+            styrelsen jobbar hårt för att få föreningen på fötter, såväl
+            ekonomiskt som strukturellt. Vi är många som drabbades av
+            nedstängningen 2022 med försvunna terminsavgifter och uteblivna
+            aktiviteter - en situation som absolut inte får upprepas.
+          </p>
+
+          <h1 className="text-white text-left text-xl sm:text-4xl font-bold py-8">
+            En ny styrelse
+          </h1>
+          <p className="text-white sm:text-2xl">
+            Med stöd av Malmö stad och MKB formade vi i maj 2023 en helt ny
+            styrelse bestående av föräldrar, coacher och engagerade. Vi
+            prioriterar struktur, kommunikation och kreativitet och våra
+            viktigaste uppdrag består i att med hjälp av full transparens
+            återvinna förtroende hos våra medlemmar och att skapa en trygg och
+            inspirerande miljö för alla parkour-intresserade.
+          </p>
+
+          <h1 className="text-left text-xl sm:text-4xl font-bold py-8">
+            Vi behöver din hjälp!
+          </h1>
+          <p className="sm:text-2xl">
+            Om vi vill att Malmös största parkouranläggning ska finnas kvar, så
+            kommer vi behöva hjälpas åt tillsammans. Alla vi på MPK jobbar
+            ideellt och varenda krona går till att återbetala skulden.
+          </p>
+          <br></br>
+          <p className="text-white sm:text-2xl">
+            Det bästa sättet du kan hjälpa till är genom att helt enkelt komma
+            och träna hos oss. Har du kompisar, barn eller syskon som vill testa
+            på? Ta med allihopa! Just nu är det viktigaste att vi betalar av
+            föreningens skuld så snabbt det går och får vi in 100 medlemmar
+            kommer föreningen vara skuldfri slutet av 2024.
+          </p>
+          <br></br>
+          <p className="text-white sm:text-2xl">
+            Tack för att du tog tiden att läsa om vår historia och hur vi
+            tillsammans kan rädda parkour i Malmö. Klicka nedanför för att läsa
+            mer om hur du kan bli medlem.
+          </p>
+          <button
+            onClick={() => {
+              navigate("/Membership");
+            }}
+            className="btn btn-primary my-8"
+          >
+            Medlemskap
+          </button>
+        </div>
       </div>
-      <Footer />
     </div>
   );
 }

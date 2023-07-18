@@ -16,20 +16,28 @@ export default function NavBar(route) {
       <div className="flex content-right">
         <a
           onClick={() => navigate("/")}
-          className="btn btn-ghost normal-case text-xl"
+          className="btn btn-ghost normal-case text-xl text-white"
         >
           MPK
         </a>
       </div>
       <div className="flex sm:justify-end">
         {/* Desktop Navbar Icons */}
-        <div className="sm:flex hidden">
+        <div className="lg:flex hidden">
           <ul>
+            <li
+              onClick={() => {
+                navigate("/");
+              }}
+              className="btn btn-ghost normal-case text-xl text-white mx-8"
+            >
+              Öppettider / Address
+            </li>
             <li
               onClick={() => {
                 navigate("/About");
               }}
-              className="btn btn-ghost normal-case text-xl mx-8"
+              className="btn btn-ghost normal-case text-xl text-white mx-8"
             >
               Om oss
             </li>
@@ -38,15 +46,15 @@ export default function NavBar(route) {
               onClick={() => {
                 navigate("/Membership");
               }}
-              className="btn btn-ghost normal-case text-xl mx-8"
+              className="btn btn-ghost normal-case text-xl text-white mx-8"
             >
               Bli Medlem
             </li>
             <li
               onClick={() => {
-                navigate("/About");
+                window.location.href = 'mailto:styrelse@malmoparkour.se';
               }}
-              className="btn btn-outline mx-8"
+              className="btn btn-outline text-white mx-8"
             >
               Kontakt
             </li>
@@ -64,9 +72,18 @@ export default function NavBar(route) {
           <li
             onClick={() => {
               toggleOpen();
+              navigate("/");
+            }}
+            className="btn btn-ghost normal-case text-xl text-white m-8"
+          >
+            Öppettider / Address
+          </li>
+          <li
+            onClick={() => {
+              toggleOpen();
               navigate("/About");
             }}
-            className="btn btn-ghost normal-case text-xl m-8"
+            className="btn btn-ghost normal-case text-xl text-white m-8"
           >
             Om oss
           </li>
@@ -76,11 +93,19 @@ export default function NavBar(route) {
               toggleOpen();
               navigate("/Membership");
             }}
-            className="btn btn-ghost normal-case text-xl m-8"
+            className="btn btn-ghost normal-case text-xl text-white m-8"
           >
             Bli Medlem
           </li>
-          <li className="btn btn-outline m-8">Kontakt</li>
+          <li
+            onClick={() => {
+              toggleOpen();
+              window.location.href = 'mailto:styrelse@malmoparkour.se';
+            }}
+            className="btn btn-outline text-white m-8"
+          >
+            Kontakt
+          </li>
         </ul>
 
         {/* Circle button for closing */}
@@ -88,7 +113,7 @@ export default function NavBar(route) {
           onClick={() => {
             toggleOpen();
           }}
-          className={`btn btn-circle z-50 fixed right-3 top- ${
+          className={`btn btn-circle text-white z-50 fixed right-3 top- ${
             open ? "" : "hidden"
           }`}
         >
@@ -110,7 +135,7 @@ export default function NavBar(route) {
         {/* hamburger menu button */}
         <button
           onClick={toggleOpen}
-          className={`btn btn-square btn-ghost sm:hidden flex ${
+          className={`btn btn-square btn-ghost text-white lg:hidden flex ${
             open ? "hidden" : ""
           }`}
         >

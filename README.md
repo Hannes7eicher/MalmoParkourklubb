@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+# Welcome to Malmö Parkour
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+We're the biggest parkour gym in Malmö and this is our repository. If you want to contribute you can open a PR and submit it for review.
 
-## Available Scripts
+## Website
 
-In the project directory, you can run:
+``
+malmoparkour.se
+``
 
 ### `npm start`
 

@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Content(props) {
+
+  const navigate = useNavigate();
 
     const { h1, p1, p2, p3, p4, p5, btn, showBtn } = props;
 
@@ -17,7 +20,7 @@ export default function Content(props) {
           <p>{p4}</p>
           <br></br>
           <p>{p5}</p>
-          {showBtn && <button className="btn btn-primary my-4">{btn}</button>}
+          {showBtn && <button onClick={() => {navigate("/Membership");}} className="btn btn-primary my-4">{btn}</button>}
         </div>
       </div>
     </div>
