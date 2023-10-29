@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function NavBar(route) {
   const [open, setOpen] = useState(false);
@@ -33,6 +34,16 @@ export default function NavBar(route) {
             >
               Öppettider / Address
             </li>
+
+            <li
+              onClick={() => {
+                navigate("/Membership");
+              }}
+              className="btn btn-ghost normal-case text-xl text-white mx-8"
+            >
+              Medlemskap / Träning
+            </li>
+
             <li
               onClick={() => {
                 navigate("/About");
@@ -42,21 +53,8 @@ export default function NavBar(route) {
               Om oss
             </li>
 
-            <li
-              onClick={() => {
-                navigate("/Membership");
-              }}
-              className="btn btn-ghost normal-case text-xl text-white mx-8"
-            >
-              Bli Medlem
-            </li>
-            <li
-              onClick={() => {
-                window.location.href = 'mailto:styrelse@malmoparkour.se';
-              }}
-              className="btn btn-outline text-white mx-8"
-            >
-              Kontakt
+            <li className="btn btn-outline text-white mx-8">
+              <Link to="/Membership#contact">Kontakt</Link>
             </li>
           </ul>
         </div>
@@ -95,12 +93,11 @@ export default function NavBar(route) {
             }}
             className="btn btn-ghost normal-case text-xl text-white m-8"
           >
-            Bli Medlem
+            Medlemskap / Träning
           </li>
           <li
             onClick={() => {
-              toggleOpen();
-              window.location.href = 'mailto:styrelse@malmoparkour.se';
+              window.location.href = "mailto:info@malmoparkour.se";
             }}
             className="btn btn-outline text-white m-8"
           >
