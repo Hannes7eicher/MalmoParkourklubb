@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
       </div>
       <div>
-        <p className="text-white">Parkourklubb Malmö</p>
+        <p className="text-white">Malmö Parkourklubb</p>
       </div>
     </footer>
   );
