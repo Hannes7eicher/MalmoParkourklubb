@@ -18,7 +18,7 @@ export default function Content(props) {
           <p>{p3}</p>
           <p>{p4}</p>
           <p>{p5}</p>
-          {showBtn && <button onClick={() => {navigate("/Membership");}} className="btn btn-primary my-4 sm:mt-8">{btn}</button>}
+          {showBtn && <button onClick={() => {navigate("Events");}} className="btn btn-primary my-4 sm:mt-8">{btn}</button>}
         </div>
       </div>
     </div>

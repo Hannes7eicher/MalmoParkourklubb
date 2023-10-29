@@ -28,20 +28,20 @@ export default function NavBar(route) {
           <ul>
             <li
               onClick={() => {
-                navigate("/");
-              }}
-              className="btn btn-ghost normal-case text-xl text-white mx-8"
-            >
-              Öppettider / Address
-            </li>
-
-            <li
-              onClick={() => {
                 navigate("/Membership");
               }}
               className="btn btn-ghost normal-case text-xl text-white mx-8"
             >
               Medlemskap / Träning
+            </li>
+
+            <li
+              onClick={() => {
+                navigate("/events");
+              }}
+              className="btn btn-ghost normal-case text-xl text-white mx-8"
+            >
+              Events
             </li>
 
             <li

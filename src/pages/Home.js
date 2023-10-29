@@ -3,6 +3,7 @@ import GoogleMaps from "../components/GoogleMaps";
 import Content from "../components/Content";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Alert from "../components/Alert";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -20,7 +21,6 @@ export default function Home() {
           h3="Träna Nu!"
           p1="Kom och träna i Malmös största parkouranläggning."
         />
-
         <div
           className="
               grid 
@@ -34,13 +34,16 @@ export default function Home() {
               m-8 
               sm:m-36"
         >
-          <Content
-            h1="Hösttermin"
-            p1="Höstterminen är stängd för anmälningar."
-            p5="Vi kommer snart att skicka ut information om den nya terminen."
-            btn="Läs Mer"
-            showBtn={true}
-          />
+          <div>
+            <Content
+              h1="Höstlov"
+              p1="Träna gratis parkour hos oss under höstlovet!"
+              p5="Halloween är runt hörnet och vi har spännande överraskningar för er..."
+              btn="Läs Mer"
+              showBtn={true}
+            />
+            <Alert content="Obs! Ingen ordinarie träning v.44" />
+          </div>
           <div>
             <Content
               h1="Hitta oss"
@@ -50,16 +53,6 @@ export default function Home() {
             <div>
               <GoogleMaps />
             </div>
-
-            {/* <Content
-          h1="Höstterminen"
-          p1="Start: 21.augusti"
-          p2="Medlemskap: 200 kr / år."
-          p3="Terminsavgift: 1000 kr 1x / veckan"
-          p4="Terminsavgift: 1800 kr 2x / veckan"
-          btn="Anmäl Dig!"
-          showBtn={false}
-        /> */}
           </div>
         </div>
       </div>
