@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
+import MPKLogo from "../assets/mpkLogo.png";
 
 export default function NavBar(route) {
   const [open, setOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function NavBar(route) {
           onClick={() => navigate("/")}
           className="btn btn-ghost normal-case text-xl text-white"
         >
-          MPK
+          <img src={MPKLogo} alt="MPK Logo" style={{ maxHeight: "48px", marginRight: "8px" }}/>{" "}
         </a>
       </div>
       <div className="flex sm:justify-end">
@@ -74,16 +75,7 @@ export default function NavBar(route) {
             }}
             className="btn btn-ghost normal-case text-xl text-white m-8"
           >
-            Öppettider / Address
-          </li>
-          <li
-            onClick={() => {
-              toggleOpen();
-              navigate("/About");
-            }}
-            className="btn btn-ghost normal-case text-xl text-white m-8"
-          >
-            Om oss
+            Startsida
           </li>
 
           <li
@@ -93,7 +85,27 @@ export default function NavBar(route) {
             }}
             className="btn btn-ghost normal-case text-xl text-white m-8"
           >
-            Medlemskap / Träning
+            Medlemskap & Träning
+          </li>
+
+          <li
+            onClick={() => {
+              toggleOpen();
+              navigate("/Events");
+            }}
+            className="btn btn-ghost normal-case text-xl text-white m-8"
+          >
+            Event
+          </li>
+
+          <li
+            onClick={() => {
+              toggleOpen();
+              navigate("/About");
+            }}
+            className="btn btn-ghost normal-case text-xl text-white m-8"
+          >
+            Om oss
           </li>
           <li
             onClick={() => {
