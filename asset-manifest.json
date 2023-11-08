@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c341b555.css",
-    "main.js": "/static/js/main.186138c8.js",
+    "main.css": "/static/css/main.b3449f7e.css",
+    "main.js": "/static/js/main.9e1c00ab.js",
     "static/js/787.8a556686.chunk.js": "/static/js/787.8a556686.chunk.js",
     "static/media/hero.png": "/static/media/hero.6f6cd616ee0b46030ae2.png",
     "static/media/membership.png": "/static/media/membership.6262cded7bfab75646ac.png",
@@ -10,14 +10,13 @@
     "static/media/weekendJam.jpeg": "/static/media/weekendJam.a9a24cd82297e2f3ddd2.jpeg",
     "static/media/halloweenJam.jpg": "/static/media/halloweenJam.9156402aa297cd2fff4f.jpg",
     "static/media/hostlov.jpg": "/static/media/hostlov.08274f4875f65e6c9d9f.jpg",
-    "static/media/mpkLogo.png": "/static/media/mpkLogo.36d737528be1a617424e.png",
     "index.html": "/index.html",
-    "main.c341b555.css.map": "/static/css/main.c341b555.css.map",
-    "main.186138c8.js.map": "/static/js/main.186138c8.js.map",
+    "main.b3449f7e.css.map": "/static/css/main.b3449f7e.css.map",
+    "main.9e1c00ab.js.map": "/static/js/main.9e1c00ab.js.map",
     "787.8a556686.chunk.js.map": "/static/js/787.8a556686.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c341b555.css",
-    "static/js/main.186138c8.js"
+    "static/css/main.b3449f7e.css",
+    "static/js/main.9e1c00ab.js"
   ]
 }
